@@ -1,8 +1,76 @@
-.i-search{
-    width: 500px !important;
-    background-color: rgba($color: $primary, $alpha: 0.2);
+// .i-search {
+//     background-color: rgba($color: $primary, $alpha: 0.2);
+// }
+
+.btn-nav {
+    padding         : 5px 10px !important;
+    background-color: $secondary;
 }
 
-.btn-nav{
-    background-color: rgba($color: $primary, $alpha: 0.5) !important;
+.btn-nav+ul.dropdown-menu>li>a {
+    padding: 10px;
+    display: flex;
+}
+
+.btn-nav+ul.dropdown-menu>li:hover {
+    background-color: $secondary;
+}
+
+.btn-nav+ul.dropdown-menu>li:hover .sub-menu {
+    display: block;
+}
+
+.btn-nav+ul.dropdown-menu>li>a:hover {
+    background-color: $secondary;
+}
+
+.btn-nav+ul.dropdown-menu>li>a>i {
+    font-size : 20px;
+    width     : 30px;
+    align-self: center;
+    text-align: center;
+}
+
+.sub-menu {
+    display         : none;
+    background-color: $secondary;
+    position        : absolute;
+    top             : 0;
+    left            : 100%;
+    white-space     : nowrap;
+}
+
+.sub-menu ul li {
+    padding: 3px;
+}
+
+.sub-menu ul li a {
+    text-decoration: none;
+    padding        : 3px;
+    color          : $dark;
+    display        : block;
+}
+
+@include media-breakpoint-down(md) {
+    .welcome-top {
+        font-size: 14px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .sub-menu {
+        width: max-content;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .i-search {
+        width: 400px !important;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .i-search {
+        width: 500px !important;
+    }
 }
