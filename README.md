@@ -8,9 +8,9 @@ Hi, we are group01 from class DevOps and this is our mini-project. Our e-commerc
 ## How to Run our project 
 * After you clone our project
   * go to project directery
-  * then open terminal run command " npm i " 
-  * again run command " npm start or npm run start "
+  * then open terminal run command ``npm install`` 
+  * again run command ``npm start`` or ``npm run start``
 
 ## Technologies that we used 
-* HTML, CSS, BootStrap, Tailwind, JavaScript and Ajax
+* HTML, CSS, BootStrap, Tailwind, JavaScript and AJAX
 * The special one is Parcel : a web application bundler that allows you to easily bundle and package your web application's assets such as JavaScript, CSS, HTML, and images into optimized production-ready bundles. It's a zero-configuration tool that automatically detects and bundles your project's dependencies, enabling you to focus on writing your code without having to worry about configuring your build system. https://parceljs.org/
