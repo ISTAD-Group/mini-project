@@ -5,15 +5,11 @@
     font-family: 'Roboto', sans-serif;
 }
 .contain{
-    display: flex;
-    margin: 183px 250px 586px 250px;
+    /* display: flex; */
+    padding: 30px;
     box-shadow: 5px 10px 18px #bebebe;
     border-radius: 10px;
     width: 100%;
-    height: 576px;
-    margin: auto;
-    margin-top: 38px;
-    margin-bottom: 50px;
 }
 .contai-1{
     width: 45%;
@@ -29,7 +25,7 @@
    font-size: 34px;
 }
 input.input-name {
-    margin: 20px 10px 20px 0px;
+    /* margin: 20px 10px 20px 0px; */
     padding: 20px;
     width: 100%;
     border-radius: 4px;
@@ -44,12 +40,12 @@ input[type="checkbox"] {
     margin-right: 10px;
 }
 input[type="text"]:focus {
-    border-color: rgb(0, 142, 204) ;
-    box-shadow: 0 0 8px 0 rgb(0, 142, 204) ;
+    border-color: #008ECC ;
+    box-shadow: 0 0 8px 0 #008ECC ;
 }
 input[type="password"]:focus {
-    border-color: rgb(0, 142, 204) ;
-    box-shadow: 0 0 8px 0 rgb(0, 142, 204) ;
+    border-color: #008ECC ;
+    box-shadow: 0 0 8px 0 #008ECC ;
 }
 .chck{
     display: flex;
@@ -67,23 +63,23 @@ input[type="password"]:focus {
     width: 100%;
     font-size: 22px;
     border-radius: 6px;
-    background-color: rgb(0, 142, 204);
+    background-color: #008ECC;
     border: 0;
     color: white;
 }
 .but:hover{
     background-color:rgb(245, 245, 245) ;
-    color:rgb(0, 142, 204) ;
+    color:#008ECC ;
     transition: 0.3s;
 }
 .fee-1{
     text-align: center;
-    margin-bottom: 83px;
+    margin-bottom: 50px;
     font-size: 16px;
 }
 a{
     text-decoration: none;
-    color: rgb(0, 142, 204);
+    color: #008ECC;
 }
 .contain-2{
     margin: 45px 62px 0px 62px;
@@ -98,10 +94,10 @@ a{
     margin-bottom: 10px;
     font-size: 22px;
 }
-.btn{
+.btn-login{
     margin: 27px 0px 5px 0px;
-    width: 274px;
-    height: 55px;
+    /* width: 274px;
+    height: 55px; */
     font-size: 16px;
     border-radius: 6px;
     border: 0;
@@ -109,35 +105,35 @@ a{
     display: inline;
     
 }
-.btn i.icon-1{
+.btn-login i.icon-1{
     padding: 10px;
     font-size: 32px;
-    color: rgb(0, 142, 204);
-    position: absolute;
+    color: #008ECC;
+    /*position: absolute;
     left: 1059px;
-    top: 345px;
+    top: 345px;*/
 }
-.btn i.icon-2{
+.btn-login i.icon-2{
     padding: 10px;
     font-size: 32px;
-    color: rgb(0, 142, 204);
-    position: absolute;
+    color: #008ECC;
+    /*position: absolute;
     left: 1059px;
-    top: 434px;
+    top: 434px;*/
 }
-.btn i.icon-3{
+.btn-login i.icon-3{
     padding: 10px;
     font-size: 32px;
-    color: rgb(0, 142, 204);
-    position: absolute;
+    color: #008ECC;
+    /*position: absolute;
     left: 1059px;
-    top: 520px;
+    top: 520px;*/
 }
-.btn i.icon-4{
+.btn-login i.icon-4{
     padding: 10px;
     font-size: 32px;
-    color: rgb(0, 142, 204);
-    position: absolute;
+    color: #008ECC;
+    /*position: absolute;
     left: 1059px;
-    top: 607px;
+    top: 607px;*/
 }
