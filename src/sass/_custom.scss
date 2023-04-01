@@ -50,7 +50,11 @@
     color          : $dark;
     display        : block;
 }
-
+@include media-breakpoint-down(sm) {
+    .title-section h4{
+        font-size: 16px;
+    }
+}
 @include media-breakpoint-down(md) {
     .welcome-top {
         font-size: 14px;
