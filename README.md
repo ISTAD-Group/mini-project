@@ -7,6 +7,6 @@ Hi, we are group01 from class DevOps and this is our mini-project. Our e-commerc
 
 ## How to Run our project 
 * After you clone our project
-* * go to project directery
-* * then open terminal run command " npm i " 
-* * again run command " npm start or npm run start "
+  * go to project directery
+  * then open terminal run command " npm i " 
+  * again run command " npm start or npm run start "
