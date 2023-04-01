@@ -12,6 +12,7 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",
     "bootstrap": "^5.2.3",
+    "nodemon": "^2.0.22",
     "parcel": "^2.8.3",
     "posthtml-include": "^1.7.4",
     "swiper": "^9.2.0"
