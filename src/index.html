@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<include src="components/head.html" locals='{
+  <include
+    src="components/head.html"
+    locals='{
         "title": "Home | Mega Mart"
-    }'></include>
+    }'
+  ></include>
 
-<body>
+  <body>
     <header class="bg-secondary">
-        <include src="./components/welcome-top.html"></include>
-        <include src="./components/nav.html"></include>
-        <div class="bg-white border-bottom">
-            <include src="./components/dropdown-menu.html"></include>
-        </div>
+      <include src="./components/welcome-top.html"></include>
+      <include src="./components/nav.html"></include>
+      <div class="bg-white border-bottom">
+        <include src="./components/dropdown-menu.html"></include>
+      </div>
     </header>
 
     <main class="container">
@@ -35,72 +38,42 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
-        </section>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
-        <section class="my-5">
-            <include src="./components/title-section.html" locals='{
+      <section class="my-5">
+        <include
+          src="./components/title-section.html"
+          locals='{
                 "title": "Grab the best deal on",
-                "tcolor": "Smartphones",
+                "tcolor": "Produts",
                 "link": "#"
-            }'></include>
-            <br>
-            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
-                <div class="col">
-                    <include src="./components/card-product.html" locals='{
-                        "title": "Samsung Galaxy S20 5G (8GB | 128GB)",
-                        "percen": "56%",
-                        "price": "$343.00",
-                        "pDiscount": "$400.00",
-                        "saving": "Save - $57.00",
-                        "image": "./assets/products/p1.png",
-                        "link": "product-detail.html"
-                    }'></include>
-                </div>
-                <div class="col">
-                    <include src="./components/card-product.html" locals='{
-                        "title": "Samsung Galaxy S20 5G (8GB | 128GB)",
-                        "percen": "56%",
-                        "price": "$343.00",
-                        "pDiscount": "$400.00",
-                        "saving": "Save - $57.00",
-                        "image": "./assets/products/p1.png",
-                        "link": "product-detail.html"
-                    }'></include>
-                </div>
-                <div class="col">
-                    <include src="./components/card-product.html" locals='{
-                        "title": "Samsung Galaxy S20 5G (8GB | 128GB)",
-                        "percen": "56%",
-                        "price": "$343.00",
-                        "pDiscount": "$400.00",
-                        "saving": "Save - $57.00",
-                        "image": "./assets/products/p1.png",
-                        "link": "product-detail.html"
-                    }'></include>
-                </div>
-                <div class="col">
-                    <include src="./components/card-product.html" locals='{
-                        "title": "Samsung Galaxy S20 5G (8GB | 128GB)",
-                        "percen": "56%",
-                        "price": "$343.00",
-                        "pDiscount": "$400.00",
-                        "saving": "Save - $57.00",
-                        "image": "./assets/products/p1.png",
-                        "link": "product-detail.html"
-                    }'></include>
-                </div>
-                <div class="col">
-                    <include src="./components/card-product.html" locals='{
-                        "title": "Samsung Galaxy S20 5G (8GB | 128GB)",
-                        "percen": "56%",
-                        "price": "$343.00",
-                        "pDiscount": "$400.00",
-                        "saving": "Save - $57.00",
-                        "image": "./assets/products/p1.png",
-                        "link": "product-detail.html"
-                    }'></include>
-                </div>
+            }'
+        ></include>
+        <br />
+        <div class="row">
+          <div id="progress">
+            <div class="dot-spinner">
+              <div class="dot-spinner__dot"></div>
+              <div class="dot-spinner__dot"></div>
+              <div class="dot-spinner__dot"></div>
+              <div class="dot-spinner__dot"></div>
+              <div class="dot-spinner__dot"></div>
+              <div class="dot-spinner__dot"></div>
+              <div class="dot-spinner__dot"></div>
+              <div class="dot-spinner__dot"></div>
             </div>
+          </div>
+        </div>
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4" id="product-list">
+
+        </div>
+
         </section>
         <!-- Shop from top categories -->
         <section class="mt-2 my-lg-5">
@@ -108,162 +81,235 @@
                 "title": "Shop From Top",
                 "tcolor": "Categories",
                 "link": "#"
-            }'></include>
-            <br>
-            <div class="round-cards d-flex flex-wrap justify-content-around">
-                <a href="#" class="text-decoration-none">
-                    <div class="d-flex justify-content-center align-items-sm-center round-card overflow-hidden">
-                        <img src="./assets/phone1.png" alt="phone1">
-                    </div>
-                    <p class="text-center">Mobile</p>
-                </ា>
-                <a href="#" class="text-decoration-none">
-                    <div class="d-flex justify-content-center align-items-sm-center round-card overflow-hidden">
-                        <img src="./assets/categories/cosmetics.png" alt="cosmetics">
-                    </div>
-                    <p class="text-center">Cosmetics</p>
-                </ា>
-                <a href="#" class="text-decoration-none">
-                    <div class="d-flex justify-content-center align-items-sm-center round-card overflow-hidden">
-                        <img src="./assets/categories/electronics.png" alt="electronics">
-                    </div>
-                    <p class="text-center">Electronics</p>
-                </ា>
-                <a href="#" class="text-decoration-none">
-                    <div class="d-flex justify-content-center align-items-sm-center round-card overflow-hidden">
-                        <img src="./assets/categories/furniture.png" alt="furniture">
-                    </div>
-                    <p class="text-center">Funiture</p>
-                </ា>
-                <a href="#" class="text-decoration-none">
-                    <div class="d-flex justify-content-center align-items-sm-center round-card overflow-hidden">
-                        <img src="./assets/categories/watch.png" alt="watch">
-                    </div>
-                    <p class="text-center">Watches</p>
-                </ា>
-                <a href="#" class="text-decoration-none">
-                    <div class="d-flex justify-content-center align-items-sm-center round-card overflow-hidden">
-                        <img src="./assets/categories/accessories.png" alt="accessories">
-                    </div>
-                    <p class="text-center">Accessories</p>
-                </ា>
+            }'
+        ></include>
+        <br />
+        <div class="round-cards d-flex flex-wrap justify-content-around">
+          <a href="#" class="text-decoration-none">
+            <div
+              class="d-flex justify-content-center align-items-sm-center round-card overflow-hidden"
+            >
+              <img src="./assets/phone1.png" alt="phone1" />
             </div>
-        </section>
-        <!-- Best selling  -->
-        <section class="my-5">
-            <include src="./components/title-section.html" locals='{
+            <p class="text-center">Mobile</p>
+          </a>
+          <a href="#" class="text-decoration-none">
+            <div
+              class="d-flex justify-content-center align-items-sm-center round-card overflow-hidden"
+            >
+              <img src="./assets/categories/cosmetics.png" alt="cosmetics" />
+            </div>
+            <p class="text-center">Cosmetics</p>
+          </a>
+          <a href="#" class="text-decoration-none">
+            <div
+              class="d-flex justify-content-center align-items-sm-center round-card overflow-hidden"
+            >
+              <img
+                src="./assets/categories/electronics.png"
+                alt="electronics"
+              />
+            </div>
+            <p class="text-center">Electronics</p>
+          </a>
+          <a href="#" class="text-decoration-none">
+            <div
+              class="d-flex justify-content-center align-items-sm-center round-card overflow-hidden"
+            >
+              <img src="./assets/categories/furniture.png" alt="furniture" />
+            </div>
+            <p class="text-center">Funiture</p>
+          </a>
+          <a href="#" class="text-decoration-none">
+            <div
+              class="d-flex justify-content-center align-items-sm-center round-card overflow-hidden"
+            >
+              <img src="./assets/categories/watch.png" alt="watch" />
+            </div>
+            <p class="text-center">Watches</p>
+          </a>
+          <a href="#" class="text-decoration-none">
+            <div
+              class="d-flex justify-content-center align-items-sm-center round-card overflow-hidden"
+            >
+              <img
+                src="./assets/categories/accessories.png"
+                alt="accessories"
+              />
+            </div>
+            <p class="text-center">Accessories</p>
+          </a>
+        </div>
+      </section>
+      <!-- Best selling  -->
+      <section class="my-5">
+        <include
+          src="./components/title-section.html"
+          locals='{
                 "title": "Top Best ",
                 "tcolor": "Selling",
                 "link": "#"
-            }'></include>
-            <br>
-            <div class="d-flex justify-content-md-evenly gap-2">
-                <a href="#" class="d-block">
-                    <img src="./assets/electronic01.png" class="w-100 h-100" alt="E01">
-                </a>
-                <a href="#" class="d-block">
-                    <img src="./assets/electronic02.png" class="w-100 h-100" alt="E02">
-                </a>
-                <a href="#" class="d-block">
-                    <img src="./assets/electronic03.png" class="w-100 h-100" alt="E03">
-                </a>
-            </div>
-        </section>
-        <!-- Daily Essentials -->
-        <section class="my-5">
-            <include src="./components/title-section.html" locals='{
+            }'
+        ></include>
+        <br />
+        <div class="d-flex justify-content-md-evenly gap-2">
+          <a href="#" class="d-block">
+            <img
+              src="./assets/electronic01.png"
+              class="w-100 h-100"
+              alt="E01"
+            />
+          </a>
+          <a href="#" class="d-block">
+            <img
+              src="./assets/electronic02.png"
+              class="w-100 h-100"
+              alt="E02"
+            />
+          </a>
+          <a href="#" class="d-block">
+            <img
+              src="./assets/electronic03.png"
+              class="w-100 h-100"
+              alt="E03"
+            />
+          </a>
+        </div>
+      </section>
+      <!-- Daily Essentials -->
+      <section class="my-5">
+        <include
+          src="./components/title-section.html"
+          locals='{
                 "title": "Top Best ",
                 "tcolor": "Selling",
                 "link": "#"
-            }'></include>
-            <br>
-            <!-- card -->
-            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-2">
-                <div class="col ">
-                    <div class="card h-100">
-                        <a href="#" class="text-decoration-none text-dark">
-                            <div class="bg-secondary d-flex align-items-center rounded-1">
-                                <img src="./assets/daily-essentials.png" class="card-img-top" alt="pic2">
-                            </div>
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                                <p class="card-title opacity-50">Daily Essentials</p>
-                                <h6 class="card-text">UP to 50% OFF</h6>
-                            </div>
-                        </a>
-                    </div>
+            }'
+        ></include>
+        <br />
+        <!-- card -->
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-2">
+          <div class="col">
+            <div class="card h-100">
+              <a href="#" class="text-decoration-none text-dark">
+                <div class="bg-secondary d-flex align-items-center rounded-1">
+                  <img
+                    src="./assets/daily-essentials.png"
+                    class="card-img-top"
+                    alt="pic2"
+                  />
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <a href="#" class="text-decoration-none text-dark">
-                            <div class="bg-secondary d-flex align-items-center rounded-1">
-                                <img src="./assets/Vegitables.png" class="card-img-top" alt="pic2">
-                            </div>
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                                <p class="card-title opacity-50">Vegitables</p>
-                                <h6 class="card-text">UP to 50% OFF</h6>
-                            </div>
-                        </a>
-                    </div>
+                <div
+                  class="card-body d-flex flex-column justify-content-center align-items-center"
+                >
+                  <p class="card-title opacity-50">Daily Essentials</p>
+                  <h6 class="card-text">UP to 50% OFF</h6>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <a href="#" class="text-decoration-none text-dark">
-                            <div class="bg-secondary d-flex align-items-center rounded-1">
-                                <img src="./assets/Fruits.png" class="card-img-top" alt="pic2">
-                            </div>
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                                <p class="card-title opacity-50">Fruits</p>
-                                <h6 class="card-text">UP to 50% OFF</h6>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <a href="#" class="text-decoration-none text-dark">
-                            <div class="bg-secondary d-flex align-items-center rounded-1">
-                                <img src="./assets/Strowberry.png" class="card-img-top " alt="pic2">
-                            </div>
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                                <p class="card-title opacity-50">Card title</p>
-                                <h6 class="card-text">UP to 50% OFF</h6>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <a href="#" class="text-decoration-none text-dark">
-                            <div class="bg-secondary d-flex align-items-center rounded-1">
-                                <img src="./assets/Mango.png" class="card-img-top " alt="pic2">
-                            </div>
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                                <p class="card-title opacity-50">Mango</p>
-                                <h6 class="card-text">UP to 50% OFF</h6>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <a href="#" class="text-decoration-none text-dark">
-                            <div class="bg-secondary d-flex align-items-center rounded-1">
-                                <img src="./assets/Cherry.png" class="card-img-top" alt="pic2">
-                            </div>
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                                <p class="card-title opacity-50">Chhery</p>
-                                <h6 class="card-text">UP to 50% OFF</h6>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+              </a>
             </div>
-        </section>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <a href="#" class="text-decoration-none text-dark">
+                <div class="bg-secondary d-flex align-items-center rounded-1">
+                  <img
+                    src="./assets/Vegitables.png"
+                    class="card-img-top"
+                    alt="pic2"
+                  />
+                </div>
+                <div
+                  class="card-body d-flex flex-column justify-content-center align-items-center"
+                >
+                  <p class="card-title opacity-50">Vegitables</p>
+                  <h6 class="card-text">UP to 50% OFF</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <a href="#" class="text-decoration-none text-dark">
+                <div class="bg-secondary d-flex align-items-center rounded-1">
+                  <img
+                    src="./assets/Fruits.png"
+                    class="card-img-top"
+                    alt="pic2"
+                  />
+                </div>
+                <div
+                  class="card-body d-flex flex-column justify-content-center align-items-center"
+                >
+                  <p class="card-title opacity-50">Fruits</p>
+                  <h6 class="card-text">UP to 50% OFF</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <a href="#" class="text-decoration-none text-dark">
+                <div class="bg-secondary d-flex align-items-center rounded-1">
+                  <img
+                    src="./assets/Strowberry.png"
+                    class="card-img-top"
+                    alt="pic2"
+                  />
+                </div>
+                <div
+                  class="card-body d-flex flex-column justify-content-center align-items-center"
+                >
+                  <p class="card-title opacity-50">Card title</p>
+                  <h6 class="card-text">UP to 50% OFF</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <a href="#" class="text-decoration-none text-dark">
+                <div class="bg-secondary d-flex align-items-center rounded-1">
+                  <img
+                    src="./assets/Mango.png"
+                    class="card-img-top"
+                    alt="pic2"
+                  />
+                </div>
+                <div
+                  class="card-body d-flex flex-column justify-content-center align-items-center"
+                >
+                  <p class="card-title opacity-50">Mango</p>
+                  <h6 class="card-text">UP to 50% OFF</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <a href="#" class="text-decoration-none text-dark">
+                <div class="bg-secondary d-flex align-items-center rounded-1">
+                  <img
+                    src="./assets/Cherry.png"
+                    class="card-img-top"
+                    alt="pic2"
+                  />
+                </div>
+                <div
+                  class="card-body d-flex flex-column justify-content-center align-items-center"
+                >
+                  <p class="card-title opacity-50">Chhery</p>
+                  <h6 class="card-text">UP to 50% OFF</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <include src="./components/footer.html"></include>
     <script type="module" src="./js/app.js"></script>
     <script type="module" src="./js/swiper.js"></script>
-</body>
-
+    <script src="./js/fetch-products.js"></script>
+  </body>
 </html>
