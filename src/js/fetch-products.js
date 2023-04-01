@@ -29,7 +29,7 @@ fetch("https://fakestoreapi.com/products")
                               <span class="text-primary fw-bold">$${(
                                 item.price -
                                 item.price * 0.2
-                              ).toFixed(2)}</span> | <del>${item.price.toFixed(
+                              ).toFixed(2)}</span> | <del>$${item.price.toFixed(
         2
       )}</del>
                         </p>
