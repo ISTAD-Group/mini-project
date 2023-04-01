@@ -67,6 +67,12 @@
     }
 }
 
+@include media-breakpoint-between(lg, xl) {
+    .nav-right ul .nav-item a {
+        font-size: 13px;
+    }
+}
+
 .head-categories {
     margin-top: 60px;
 }

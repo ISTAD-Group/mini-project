@@ -17,18 +17,26 @@
     </header>
 
     <main class="container">
-      <section>
-        <!-- Slider main container -->
-        <div class="swiper w-100">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <img
-                src="./assets/slide/s2.jpg"
-                alt="slide1"
-                class="w-100 rounded-4"
-              />
+        <section class="mt-5">
+            <!-- Slider main container -->
+            <div class="swiper w-100">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./assets/slide/s2.jpg" alt="slide1" class="w-100 rounded-4">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/slide/s1.png" alt="slide1" class="w-100 rounded-4">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/slide/s2.jpg" alt="slide1" class="w-100 rounded-4">
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
             <div class="swiper-slide">
               <img
@@ -74,18 +82,10 @@
               <div class="dot-spinner__dot"></div>
               <div class="dot-spinner__dot"></div>
             </div>
-          </div>
-        </div>
-        <div
-          class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4"
-          id="product-list"
-        ></div>
-      </section>
-      <!-- Shop from top categories -->
-      <section class="my-5">
-        <include
-          src="./components/title-section.html"
-          locals='{
+        </section>
+        <!-- Shop from top categories -->
+        <section class="mt-2 my-lg-5">
+            <include src="./components/title-section.html" locals='{
                 "title": "Shop From Top",
                 "tcolor": "Categories",
                 "link": "#"
