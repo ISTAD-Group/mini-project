@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<include src="components/head.html" locals='{
+        "title": "Home | Mega Mart"
+    }'></include>
+
+<body>
+    <header class="bg-secondary">
+        <include src="./components/welcome-top.html"></include>
+        <include src="./components/nav.html"></include>
+        <div class="bg-white border-bottom">
+            <include src="./components/dropdown-menu.html"></include>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="my-5">
+            <include src="./components/title-section.html" locals='{
+                "title": "Grab the best deal on",
+                "tcolor": "Produts",
+                "link": "#"
+            }'></include>
+            <br />
+            <div class="row">
+                <div id="progress">
+                    <div class="dot-spinner">
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                        <div class="dot-spinner__dot"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4" id="product-list">
+
+            </div>
+        </section>
+    </main>
+
+    <include src="./components/footer.html"></include>
+    <script type="module" src="./js/app.js"></script>
+    <script src="./js/products.js"></script>
+</body>
+
+</html>

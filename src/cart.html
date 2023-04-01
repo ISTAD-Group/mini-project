@@ -1,16 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-    <include src="components/head.html" locals='{
+<include src="components/head.html" locals='{
         "title": "Card | Mega Mart"
     }'></include>
+
 <body>
     <include src="./components/nav.html"></include>
-    
-    <main class="container">
-        <h1>Cart page here</h1>
+
+    <main class="container c-cart my-3">
+        <div class="card shadow">
+            <h4 class="card-header p-3 text-primary fw-bold text-uppercase">Your Shopping Cart (2)</h4>
+            <form action="#" class="card-body">
+                <div class="card mb-3 position-relative">
+                    <div class="row g-0 p-2 position-relative">
+                        <div class="cart-check">
+                            <div class="form-check">
+                                <input class="form-check-input p-2" type="checkbox" checked id="p1">
+                            </div>
+                        </div>
+                        <div class="cart-trash">
+                            <a href="#">
+                                <i class="fa-solid fa-trash fs-3 text-danger"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="cart-pr">
+                                <img src="./assets/carts/p1.png" class="img-fluid rounded-start" alt="p1">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body d-flex flex-column justify-content-between h-100">
+                                <p class="card-text">
+                                    Ipad case With TouchPad Keyboard and Wireless Mouse
+                                </p>
+                                <div>
+                                    <p class="mb-1">US $55.00</p>
+                                    <p>Total : US $57.00</p>
+                                    <div class="input-group mb-3" style="width: 120px;">
+                                        <button class="input-group-text fs-6">-</button>
+                                        <input type="number" class="form-control" value="1"
+                                            aria-label="Amount (to the nearest dollar)">
+                                        <button class="input-group-text fs-6">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 position-relative">
+                    <div class="row g-0 p-2 position-relative">
+                        <div class="cart-check">
+                            <div class="form-check">
+                                <input class="form-check-input p-2" type="checkbox" checked id="p2">
+                            </div>
+                        </div>
+                        <div class="cart-trash">
+                            <a href="#">
+                                <i class="fa-solid fa-trash fs-3 text-danger"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="cart-pr">
+                                <img src="./assets/carts/p2.png" class="img-fluid rounded-start" alt="p2">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body d-flex flex-column justify-content-between h-100">
+                                <p class="card-text">
+                                    Ipad case With TouchPad Keyboard and Wireless Mouse
+                                </p>
+                                <div>
+                                    <p class="mb-1">US $55.00</p>
+                                    <p>Total : US $57.00</p>
+                                    <div class="input-group mb-3" style="width: 120px;">
+                                        <button class="input-group-text fs-6">-</button>
+                                        <input type="number" class="form-control" value="1"
+                                            aria-label="Amount (to the nearest dollar)">
+                                        <button class="input-group-text fs-6">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input p-2" type="checkbox" value="" id="selectall">
+                    <label class="form-check-label fw-bold" for="selectall">
+                        Select ALL
+                    </label>
+                </div>
+                <br>
+                <blockquote class="ps-3 border-start border-2 border-primary">
+                    <h6 class="text-danger">Disclaimer</h6>
+                    We does not control the content posted by members and therefore assumes no responsibility and disclaims any liability for any consequence relating directly or indirectly to any action or inaction.
+                </blockquote>
+
+                <div class="my-4">
+                    <button type="submit" class="btn btn-primary text-white fw-bold float-end"><i class="fa-solid fa-credit-card"></i> Checout</button>
+                </div>
+            </form>
+        </div>
     </main>
 
     <include src="./components/footer.html"></include>
     <script type="module" src="./js/app.js"></script>
 </body>
+
 </html>
