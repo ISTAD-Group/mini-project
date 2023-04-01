@@ -13,5 +13,4 @@ Hi, we are group01 from class DevOps and this is our mini-project. Our e-commerc
 
 ## Technologies that we used 
 * HTML, CSS, BootStrap, Tailwind, JavaScript and Ajax
-* The special one is Parcel 
-Parcel JS is a web application bundler that allows you to easily bundle and package your web application's assets such as JavaScript, CSS, HTML, and images into optimized production-ready bundles. It's a zero-configuration tool that automatically detects and bundles your project's dependencies, enabling you to focus on writing your code without having to worry about configuring your build system.
+* The special one is Parcel : a web application bundler that allows you to easily bundle and package your web application's assets such as JavaScript, CSS, HTML, and images into optimized production-ready bundles. It's a zero-configuration tool that automatically detects and bundles your project's dependencies, enabling you to focus on writing your code without having to worry about configuring your build system.
