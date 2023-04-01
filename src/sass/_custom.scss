@@ -156,3 +156,36 @@
 }
 
 // End product Item card
+
+
+// Cart page
+
+.c-cart {
+    max-width: 800px;
+}
+
+.c-cart .cart-pr {
+    width : 100%;
+    height: 190px;
+}
+
+.c-cart .cart-pr img {
+    width     : 100%;
+    height    : 100%;
+    object-fit: contain;
+}
+
+.cart-trash {
+    position: absolute;
+    right   : 15px;
+    top     : 15px;
+    width   : max-content;
+}
+
+.cart-check{
+    position: absolute;
+    left   : 15px;
+    top     : 15px;
+    width   : max-content;
+}
+// End Cart
