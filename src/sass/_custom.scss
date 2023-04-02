@@ -73,6 +73,12 @@
     }
 }
 
+@include media-breakpoint-up(sm){
+  .nav-right ul{
+    gap: $spacer * 1.5 !important;
+  }
+}
+
 .head-categories {
     margin-top: 60px;
 }
