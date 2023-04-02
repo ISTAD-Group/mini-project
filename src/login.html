@@ -26,13 +26,13 @@
                     <!-- Form input information -->
                     <form action="#">
                         <div class="mb-3">
-                            <label for="name" class="form-label">User Name</label>
-                            <input type="text" class="form-control input-name" id="name"
+                            <label for="username" class="form-label">User Name</label>
+                            <input type="text" class="form-control input-name" id="username"
                                 placeholder="Enter Your User Name">
                         </div>
                         <div class="mb-3">
-                            <label for="name" class="form-label">Password</label>
-                            <input type="password" class="form-control input-name" id="name"
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control input-name" id="password"
                                 placeholder="Enter Your Password">
                         </div>
                         <!-- boxcheck -->
@@ -46,7 +46,7 @@
                             </div>
                         </div>
                         <!-- Button login -->
-                        <button type="submit" class="but">Login</button>
+                        <button type="button" class="but" onclick="validateUser()">Login</button>
                     </form>
                     <p class="fee-1">Dint hava an account ?<a href="./register.html">Sign up</a></Span></p>
                 </div>
@@ -76,11 +76,12 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </main>
-
+    <a href="./admin/index.html"></a>
     <include src="./components/footer.html"></include>
     <script type="module" src="./js/app.js"></script>
-  </body>
+    <script src="./js/login.js"></script>
+</body>
+
 </html>
