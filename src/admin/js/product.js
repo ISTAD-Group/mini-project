@@ -20,7 +20,7 @@ fetch("https://fakestoreapi.com/products")
                }" alt="Avatar" style="width:50px; height:50px;">
                </td>
                <td>${item.title.slice(0, 20)}</td>
-               <td>${item.price}</td>
+               <td>$${item.price}</td>
                <td>
                   <div class="dropdown">
                      <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown" aria-expanded="false">
