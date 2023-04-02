@@ -1,5 +1,5 @@
 // make ajax call to load product data
-fetch("https://fakestoreapi.com/products?limit=5")
+fetch("https://fakestoreapi.com/products")
   .then((response) => response.json())
   .then((data) => {
     // hide progress bar
@@ -7,13 +7,14 @@ fetch("https://fakestoreapi.com/products?limit=5")
 
     // loop through product data and display each item
     let products = "";
-    data.forEach((item) => {
+    data.forEach((item,index) => {
+      let dis = `<div class="p-discount bg-primary text-white p-1">
+      <small>20%<br> OFF</small>
+   </div>`
       products += `
                   <div class="col">
                   <div class="card p-item overflow-hidden">
-                  <div class="p-discount bg-primary text-white p-1">
-                     <small>20%<br> OFF</small>
-                  </div>
+                  ${index<5?dis:''}
                   <a href="product-detail.html" class="text-decoration-none">
                      <div class="product-img p-2">
                         <img src="${
