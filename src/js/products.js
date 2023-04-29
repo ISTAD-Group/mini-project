@@ -14,7 +14,9 @@ fetch("https://fakestoreapi.com/products")
       products += `
                   <div class="col">
                   <div class="card p-item overflow-hidden">
-                  ${index<5?dis:''}
+                    <div class="p-discount bg-primary text-white p-1">
+                      <small>${index<5 ? '20%' : '10%'}<br> OFF</small>
+                    </div>
                   <a href="product-detail.html?id=${item.id}" class="text-decoration-none">
                      <div class="product-img p-2">
                         <img src="${
@@ -28,15 +30,14 @@ fetch("https://fakestoreapi.com/products")
                         )}</h6>
                         <p class="card-text">
                               <span class="text-primary fw-bold">$${(
-                                item.price -
-                                item.price * 0.2
+                                index<5 ? item.price * 80 /100 : item.price * 90 /100
                               ).toFixed(2)}</span> | <del>$${item.price.toFixed(
         2
       )}</del>
                         </p>
                         <hr>
                         <h6 class="fw-bold text-success">Save - $${(
-                          item.price * 0.2
+                          index<5 ? item.price * 0.2 : item.price * 0.1
                         ).toFixed(2)}</h6>
                      </div>
                   </a>
