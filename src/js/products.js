@@ -15,7 +15,7 @@ fetch("https://fakestoreapi.com/products")
                   <div class="col">
                   <div class="card p-item overflow-hidden">
                   ${index<5?dis:''}
-                  <a href="product-detail.html" class="text-decoration-none">
+                  <a href="product-detail.html?id=${item.id}" class="text-decoration-none">
                      <div class="product-img p-2">
                         <img src="${
                           item.image
